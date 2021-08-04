@@ -195,7 +195,7 @@ btnAdd.addEventListener('click', () => {
     let degree = degreeInput.value;
     gtag('event', 'click', {
   'event_category': ${name},
-  'event_label': 'input'
+  'event_label': ${city}
 });
     let time = new Date();
     timestamp = time.toUTCString().slice(0,25);
