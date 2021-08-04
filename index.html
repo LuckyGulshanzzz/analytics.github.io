@@ -157,7 +157,7 @@ button:hover{
    <div class="container">
    <h1>PRACTICE WEBSITE</h1>
    <a href="#" class="button" onClick="gtag('event', 'click', {
-  'event_category': 'data',
+  'event_category': 'addNewUser',
   'event_label': 'input'
 
 });">Add User</a>
@@ -203,7 +203,11 @@ btnAdd.addEventListener('click', () => {
    if(degree==""){
     degree="NA";
   }
-    
+  gtag('event', 'click', {
+  'event_category': '${city}',
+  'event_label': '${degree}'
+
+});  
 
  
     let template = `
