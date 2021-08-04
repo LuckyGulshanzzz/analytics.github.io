@@ -156,7 +156,11 @@ button:hover{
     
    <div class="container">
    <h1>PRACTICE WEBSITE</h1>
-   <a href="#" class="button">Add User</a>
+   <a href="#" class="button" onClick="gtag('event', 'click', {
+  'event_category': 'data',
+  'event_label': 'input'
+
+});">Add User</a>
 
         <table>
             <tr>
@@ -200,11 +204,7 @@ btnAdd.addEventListener('click', () => {
     degree="NA";
   }
     
-gtag('event', 'click', {
-  'event_category': 'data',
-  'event_label': 'input'
 
-});
  
     let template = `
                 <tr>
