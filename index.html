@@ -7,8 +7,9 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+    gtag('set', {cookie_flags: 'SameSite=None;Secure'});
 
-  gtag('config', 'UA-203929257-6',{ "anonymize_ip": true,"cookie_flags": "SameSite=None;Secure" });
+  gtag('config', 'UA-203929257-6');
 </script>
 
 
