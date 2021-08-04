@@ -207,7 +207,11 @@ btnAdd.addEventListener('click', () => {
   'event_label': 'city'
 
 });  
+gtag('event', 'click', {
+  'event_category': ${name},
+  'event_label': 'name'
 
+});
  
     let template = `
                 <tr>
